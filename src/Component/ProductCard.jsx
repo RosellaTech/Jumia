@@ -1,12 +1,12 @@
-import "./Product.css";
 
-const ProductCard = ({ imgURL,  productName, price, itemsLeft }) => {
+
+const ProductCard = ({ imgURL,  productName, price, description, itemsLeft }) => {
   return (
-    
-      <div className="ProductCard">
+      <div className="product-card">
         <img src={imgURL} alt="product image"/>
-        <h2>{productName}</h2>
-        <p>{price}</p>
+        <p className="product-name">{productName}</p>
+        <p className="product-description">{description}</p>
+        <p className="product-price">{price}</p>
         <p>{itemsLeft}</p>
       </div>
     
